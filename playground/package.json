@@ -1,5 +1,5 @@
 {
-  "name": "vite-plugin-alias-from-types-playground",
+  "name": "@holy-two/vite-plugin-alias-playground",
   "private": true,
   "version": "0.0.0",
   "type": "module",

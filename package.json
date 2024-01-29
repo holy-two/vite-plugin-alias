@@ -1,5 +1,5 @@
 {
-  "name": "vite-plugin-alias-from-types",
+  "name": "@holy-two/vite-plugin-alias",
   "private": false,
   "version": "0.0.1-beta-1",
   "type": "module",
