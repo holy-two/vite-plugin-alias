@@ -25,12 +25,12 @@
     "node": ">=18.x"
   },
   "bugs": {
-    "url": "https://github.com/holy-two/vite-plugin-alias-from-types"
+    "url": "https://github.com/holy-two/vite-plugin-alias#readme"
   },
-  "homepage": "https://github.com/holy-two/vite-plugin-alias-from-types#readme",
+  "homepage": "https://github.com/holy-two/vite-plugin-alias#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/holy-two/vite-plugin-alias-from-types"
+    "url": "https://github.com/holy-two/vite-plugin-alias#readme"
   },
   "devDependencies": {
     "typescript": "^5.3.3",

@@ -10,7 +10,5 @@
   },
   "include": [
     "src/**/*.vue",
-    "src/**/*.ts",
-    "vite.config.ts"
   ],
 }
