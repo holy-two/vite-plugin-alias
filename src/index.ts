@@ -28,7 +28,7 @@ const alias = () => {
 
 export default function vitePluginTemplate(): Plugin {
   return {
-    name: 'vite-plugin-template',
+    name: 'vite-plugin-alias-from-types',
     config: () => ({
       resolve: {
         alias: alias(),
