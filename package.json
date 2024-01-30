@@ -1,7 +1,7 @@
 {
   "name": "@holy-two/vite-plugin-alias",
   "private": false,
-  "version": "0.0.1-beta-1",
+  "version": "0.0.1-beta",
   "type": "module",
   "license": "Apache-2.0",
   "main": "./dist/index.cjs",
@@ -25,12 +25,12 @@
     "node": ">=18.x"
   },
   "bugs": {
-    "url": "https://github.com/holy-two/vite-plugin-alias#readme"
+    "url": "https://github.com/holy-two/vite-plugin-alias/issues"
   },
   "homepage": "https://github.com/holy-two/vite-plugin-alias#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/holy-two/vite-plugin-alias#readme"
+    "url": "https://github.com/holy-two/vite-plugin-alias"
   },
   "devDependencies": {
     "typescript": "^5.3.3",
