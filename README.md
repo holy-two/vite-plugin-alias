@@ -1,10 +1,12 @@
 # @holy-two/vite-plugin-alias
 
-## illustration
+![@holy-two/vite-plugin-alias](https://img.shields.io/npm/v/@holy-two/vite-plugin-alias.svg)
+
+## Illustration
 
 This is a vite plugin that automatically retrieves and sets path aliases from [`tsconfig.json`](./playground/tsconfig.json).
 
-### usage
+## Usage
 
 ```shell
 npm i @holy-two/vite-plugin-alias -D
