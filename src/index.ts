@@ -1,7 +1,7 @@
 import { Plugin } from 'vite';
 import { join } from 'path';
 import { existsSync, readFileSync } from 'fs';
-import stripJsonComments from 'strip-json-comments';
+import { parse } from 'jsonc-parser';
 
 const alias = () => {
   const tsconfigPath = join(process.cwd(), 'tsconfig.json');
@@ -20,11 +20,11 @@ const alias = () => {
   } else {
     configStr = readFileSync(jsconfigPath, 'utf8');
   };
-  const tsConfig = JSON.parse(stripJsonComments(configStr.replace(/,\s*([\]}])/g, '$1')));
+  const tsConfig = parse(configStr);
   const paths: TsConfigPaths = tsConfig?.compilerOptions?.paths;
 
   if (!paths) {
-    console.warn("tsconfig.json's paths or jsconfig.json's paths not found");
+    console.error("tsconfig.json's paths or jsconfig.json's paths not found");
   };
 
   // todo: 未处理 tsconfig.json 中的 baseUrl
