@@ -1,7 +1,7 @@
 {
   "name": "@holy-two/vite-plugin-alias",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.1.0",
   "type": "module",
   "license": "Apache-2.0",
   "main": "./dist/index.cjs",
@@ -22,7 +22,7 @@
     }
   },
   "engines": {
-    "node": ">=18.x"
+    "node": ">=20.19.0"
   },
   "bugs": {
     "url": "https://github.com/holy-two/vite-plugin-alias/issues"
@@ -35,15 +35,15 @@
   "devDependencies": {
     "@holy-two/vite-plugin-alias": "workspace:*",
     "@rollup/plugin-commonjs": "^25.0.7",
-    "typescript": "^5.3.3",
+    "typescript": "^6.0.0",
     "unbuild": "^2.0.0",
-    "vite": "^5.0.12"
+    "vite": "^7.0.0"
   },
   "peerDependencies": {
     "vite": ">=4.0.0"
   },
   "dependencies": {
-    "@types/node": "^20.11.9",
+    "@types/node": "^20.19.0",
     "jsonc-parser": "^3.2.1"
   }
 }

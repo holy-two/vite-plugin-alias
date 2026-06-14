@@ -17,11 +17,11 @@ In `vite.config.ts`:
 ```diff
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-+ import vitePluginTemplate from '@holy-two/vite-plugin-alias'
++ import alias from '@holy-two/vite-plugin-alias'
 
 export default defineConfig({
   plugins: [vue(),
-+  vitePluginTemplate(),
++  alias(),
   ],
 })
 
@@ -34,10 +34,9 @@ You just need to configure it like this in `tsconfig.json`:
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
-+    "baseUrl": ".",
 +    "paths": {
 +       "~/*": [
-+         "src/*"
++         "./src/*"
 +       ]
 +     }
   },
@@ -51,3 +50,5 @@ You just need to configure it like this in `tsconfig.json`:
 
 `@holy-two/vite-plugin-alias` will automatically parse the paths set within the paths to define aliases.
 So you can use `~/components/**` (same as `./src/components/**`) to access files.
+
+Compatible with TypeScript 6.0+ where `compilerOptions.baseUrl` is removed (treated as `'.'`), and `compilerOptions.paths` values not starting with `'.'` are treated as `'./'` prefixed.
